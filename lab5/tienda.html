@@ -1,0 +1,48 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body><center>
+    <a href="password.html"> Verificación de Contraseña </a>|
+    <a href="tienda.html"> Tienda Virtual </a>|
+    <a href="aventura.html"> Aventura</a><br><br>
+    <button onclick="preguntas()">Mostrar preguntas con sus respuestas</button>
+
+   <br> <center><h1> Carrito de compras de discos </h1></center>
+   <table cellpadding="10"  align="center" width="35%" border="1">
+        <tbody>
+            <tr>
+                <th><b>Producto</b></th>
+                <th><b>Precio</b></th>
+            </tr>
+            <tr>
+                <td> Simulation Theory (Muse) <input type="number" name="muse" id="muse" value="1" min="0"><br></td>
+                <td> $349.99 </td>
+            </tr>
+            <tr>
+                <td> Lateralus (Tool) <input type="number" name="tool" id="tool" value="1" min="0"><br></td>
+                <td> $649.99 </td>
+            </tr>
+            <tr>
+                <td> Awake (Skillet) <input type="number" name="skillet" id="skillet" value="1" min="0"><br></td>
+                <td> $199.99 </td>
+            </tr>
+            <tr>
+                <td> Racine Carree (Stromae) <input type="number" name="stromae" id="stromae" value="1" min="0"><br></td>
+                <td> $299.99 </td>
+            </tr>
+
+                
+        </tbody>
+    </table>
+    <br>
+    %IVA <input type="number" name="iva" value="16" id="iva" min="0" max="100"><br>
+    <br><br>
+    Total: <p id="totalPay"> </p>
+
+    <button type="button" name="boton" onclick="pagar()">Pagar</button><br>
+
+    <script type = "text/javascript" src = "lab5.js"></script>
+    </center>
+  </body>
+</html>
