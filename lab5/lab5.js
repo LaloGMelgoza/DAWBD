@@ -29,14 +29,21 @@ function pagar() {
 
 function aventura() {
   let nombre = document.getElementById("nombre").value;
-  document.write("<br><br>Hola, " + nombre);  //TRATO DE IMPRIMIR VARIABLES DE aventura.html
+  let materia = document.getElementById("materia").value;
+  let profe = document.getElementById("profe").value;
+  let verbo1 = document.getElementById("verbo1").value;
+  let objeto1 = document.getElementById("objeto1").value;
+  let objeto2 = document.getElementById("objeto2").value;
+  document.write("<br><br>Se aproximaba el día de revisiones de exámenes finales, y " + nombre + " estaba desesperado porque estaba seguro que le faltaba 1 punto para pasar la materia de " + materia);
+  document.write(". " + nombre + " corrió a toda velocidad a la oficina de " + profe + ", y cuando entró, lo encontró  " + verbo1 + " con su " + objeto1 + ".");
+  document.write(" --Necesito un 99 en el examen final, y tú me lo vas a dar!-- exclamó " + nombre + " mientras le apuntaba a " + profe + " con su " + objeto2 + ".");
 }
 
 function preguntas() {
   document.write("<b>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</b><br><br>");
   document.write("Para que desde el momento en que el usuario envíe los contenidos de sus campos llenados, el programa se asegure de no proceder a hacer lo que sea antes de primero asegurarse que la informacion introducida hará que el procedimiento funcione. <br><br>");
   document.write("<b><br>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</b><br><br>");
-  document.write("Respuesta. <br><br>");
+  document.write("En el buscador puedes desactivar el javascript desde las herramientas del desarrollador para bypassear la seguridad. <br><br>");
   document.write("<b><br>¿Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</b><br><br>");
   document.write("Respuesta. <br><br>");
 }
