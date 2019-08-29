@@ -34,9 +34,12 @@ function aventura() {
   let verbo1 = document.getElementById("verbo1").value;
   let objeto1 = document.getElementById("objeto1").value;
   let objeto2 = document.getElementById("objeto2").value;
+  let animal = document.getElementById("animal").value;
   document.write("<br><br>Se aproximaba el día de revisiones de exámenes finales, y " + nombre + " estaba desesperado porque estaba seguro que le faltaba 1 punto para pasar la materia de " + materia);
   document.write(". " + nombre + " corrió a toda velocidad a la oficina de " + profe + ", y cuando entró, lo encontró  " + verbo1 + " con su " + objeto1 + ".");
-  document.write(" --Necesito un 99 en el examen final, y tú me lo vas a dar!-- exclamó " + nombre + " mientras le apuntaba a " + profe + " con su " + objeto2 + ".");
+  document.write(" --Necesito un 99 en el examen final, y tú me lo vas a dar!-- exclamó " + nombre + " mientras le apuntaba a " + profe + " con su " + objeto2 + ". ");
+  document.write(profe + " procedió a arrancarse la camisa, imitando el sonido de un " + animal + " y saltando por la ventana. Nadie nunca más volvió a escuchar de ni ver a " + profe + ", y " + nombre);
+  document.write(" nunca pasó " + materia + ".");
 }
 
 function preguntas() {
@@ -45,5 +48,5 @@ function preguntas() {
   document.write("<b><br>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</b><br><br>");
   document.write("En el buscador puedes desactivar el javascript desde las herramientas del desarrollador para bypassear la seguridad. <br><br>");
   document.write("<b><br>¿Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</b><br><br>");
-  document.write("Respuesta. <br><br>");
+  document.write("Para que la validación no tenga que pasar hasta el servidor para poder ser validada, y en vez de eso pueda ser validada antes para optimizar el proceso. <br><br>");
 }
