@@ -1,0 +1,27 @@
+.center {
+	text-align: center;
+}
+
+.watermark {
+	position: relative;
+	text-align: center;
+	opacity: 0.3;
+}
+
+body {
+	background-image: url("img/background.png");
+}
+
+div.a {
+	font-family: "Courier New";
+	text-align: center;
+	top: 400px;
+}
+
+.centered {
+	font-family: "Courier New";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
