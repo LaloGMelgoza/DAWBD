@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" dir="ltr">
 <head>
+	<meta charset="utf-8">
 	<title>Lab 6</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
+
 	<div class="a">
 		<h1>Lab 6</h1>
 	</div>
@@ -15,11 +16,64 @@
 	</div>
 
 	<div class="centered">
-		<h3 id="textoCambiante" onmouseover="mouseOver()" onmouseout="mouseOut()"> Soy un texto cambiante, arrastra el mouse sobre mi!! </h3>
+		<h3 id="textoCambiante" onmouseover="cambiaEstilo()" onmouseout="regresaEstilo()"> Soy un texto cambiante, arrastra el mouse sobre mi!! </h3>
 	</div>
 
-	<div>
-		
+	<div class="courier">
+		<h4> El camino del taekwondo esta conformado por seis colores de cintas que conducen a la cinta negra: </h4>
+		<ol>
+			<li id="blanca">Blanca <button onclick="infoBlanca()" onclick="hideSignificado()"> Significado </button></li> 
+			<li id="amarilla">Amarilla <button onclick="infoAmarilla()"> Significado </button></li>
+			<li id="verde">Verde <button onclick="infoVerde()"> Significado </button></li>
+			<li id="azul">Azul <button onclick="infoAzul()"> Significado </button></li>
+			<li id="roja">Roja <button onclick="infoRoja()"> Significado </button></li>
+			<li id="negra">Negra <button onclick="infoNegra()"> Significado </button></li>
+		</ol>
+	</div>
+	<br><br>
+
+
+	<div class="courier">
+		<h4> Preguntas</h4>
+		<ol>
+			<li>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</li>
+			<p>
+				<ul>
+					<li>Absolute: posiciona elemento con relación a elemento padre.</li>
+	                <li>Static: posiciona elemento con respecto al orden del HTML.</li>
+	                <li>Fixed: posiciona elemento con respecto a la ventana.</li>
+	                <li>Relative: posiciona elemento con respecto a su posición normal.</li>
+	                <li>Sticky: el elemento se mueve con respecto al scrolling del usuario.</li>
+				</ul>
+			</p>
+			<li>¿Cuáles son los valores estándar para la propiedad visibility?</li>
+			<p>
+				default, inherited, animatable y syntax.
+			</p>
+			<li>¿Qué es el zIndex y para qué sirve?</li>
+			<p>
+				Es una propiedad que especifica el orden de elementos apilados.
+			</p>
+		</ol>
+
+		<br><br>
+
+		<h4> Referencias adicionales</h4>
+		<ol>
+			<li> <a href="https://stackoverflow.com/questions/8860058/change-text-on-mouse-over-and-change-back-on-mouse-out"> https://stackoverflow.com/questions/8860058/change-text-on-mouse-over-and-change-back-on-mouse-out
+			</a>
+			</li>
+			<li> <a href="">
+				https://www.w3schools.com/howto/howto_css_image_text.asp
+			</a>	
+			</li>
+			<li><a href="https://www.w3schools.com/jsref/event_onmouseover.asp">
+				https://www.w3schools.com/jsref/event_onmouseover.asp
+			</a>
+			<li><a href="https://www.w3schools.com/cssref/css3_pr_opacity.asp">https://www.w3schools.com/cssref/css3_pr_opacity.asp
+			</a>
+			</li>
+		</ol>
 	</div>
 	
 

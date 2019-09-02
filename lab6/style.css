@@ -1,5 +1,5 @@
-.center {
-	text-align: center;
+.courier {
+	font-family: "Courier New";
 }
 
 .watermark {
@@ -10,6 +10,9 @@
 
 body {
 	background-image: url("img/background.png");
+}
+
+button {
 }
 
 div.a {
@@ -25,3 +28,4 @@ div.a {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
