@@ -1,0 +1,23 @@
+h1 {
+  font-family: "Helvetica"
+}
+
+p {
+  font-family: "Helvetica"
+}
+
+.despegar {
+  padding: 30px;
+  font-family: "Helvetica";
+}
+
+.error {
+  padding: 30px;
+  font-family: "Helvetica";
+  color: red;
+}
+
+.center {
+  font-family: "Helvetica";
+  text-align: center;
+}

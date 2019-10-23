@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Lab10</title>
+
+    <body>
+    	<h1>Lab 10</h1>
+    	<form class="despegar" method="POST" action=" <?php echo $_SERVER["PHP_SELF"];?> ">
+    		Elige un album de Muse para conocer la letra de la canción con mayor numero de reproducciones: <br><br>
+        	<input type="radio" name= "album" value= "absol">  Absolution<br><br>
+        	<input type="radio" name= "album" value= "black">  Black Holes and Revelations<br><br>
+        	<input type="radio" name= "album" value= "resist">  The Resistance<br><br>
+        	<input type="radio" name= "album" value= "drones">  Drones<br><br>
+        	<input type="radio" name= "album" value= "simul">  Simulation Theory<br><br>
+
+        	<button>submit</button>
+  		</form>
+</body>
+    </head>
