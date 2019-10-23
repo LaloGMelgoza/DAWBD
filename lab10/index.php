@@ -4,6 +4,7 @@
     	if(empty($_POST["album"])) {
     		include("forma.html");
     		echo "<p class='error'> Favor de elegir una opcion. </p>";
+    		include("preguntas.html");
     	}
     	else{
             $album = ($_POST["album"]);
@@ -219,6 +220,8 @@
 											It's too late for a revolution<br>
 											Brace for the final solution </p>";
             	}
+
+            	include("preguntas.html");
             }
         } 
     }

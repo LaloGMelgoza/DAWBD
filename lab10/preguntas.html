@@ -1,0 +1,24 @@
+<h4 ><br><br><br>Preguntas</h4>
+
+<p class="despegar">
+
+	1. ¿Por qué es una buena práctica separar el controlador de la vista?<br><br>
+	Porque de esta manera es más fácil reutilizar el código y  darle mantenimiento al sitio.<br><br><br>
+	
+	2. Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?<br><br>
+	$GLOBALS: arreglo de variables globales. Se puedee acceder a ella dentro y fuera de cualquier función. <br>
+    $_SERVER: arreglo que contiene información de cabeceras, rutas y ubicaciones de scripts. <br>
+    $_FILES: arreglo asociativo de elementos subidos al script mediante $_POST. <br>
+    $_COOKIE: arreglo asociativo de variables eviadas al script mediante Cookies HTTP.<br> 
+    $_SESSION: arreglo asociativo que contiene las variables de sesión disponibles en el script actual. <br>
+    $_REQUEST: arreglo asociativo que contiene lo guardado en $_GET, $_POST y $_COOKIE.<br>
+    $_ENV: array asociativo que contiene variables enviadas al script actual mediante el método de entorno.<br><br><br>
+    
+    3. Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.<br><br>
+    - eval ( string $code ): permite evaluar un string dado por el usuario como código PHP. El string no debe ir entre etiquetas PHP . Es totalmente desaconsejado usarlo ya que das entrada a que cualquier usuario inyecte código malicioso a tu código. Me pareció muy interesante porque nunca había visto una función que permitiera al usuario interactuar con el código.<br>
+    - string php_strip_whitespace ( string $filename): copia el código php a un nuevo archivo ($filename) sin comentarios ni espacios blancos.<br><br><br>
+    
+    4. ¿Qué es XSS y cómo se puede prevenir?<br><br>
+    Son un ataque, son un tipo de infección, en el cual scripts maliciosos son inyectados a sitios web, ocurren cuando el atacante usa una aplicación web para mandar codigo malicioso.
+
+</p>

@@ -2,8 +2,21 @@ h1 {
   font-family: "Helvetica"
 }
 
+h4 {
+  font-family: "Helvetica"
+}
+
+li {
+  font-family: "Helvetica"
+}
+
 p {
   font-family: "Helvetica"
+}
+
+img {
+	background-image: url("back.jpg");
+	opacity: 0.5;
 }
 
 .despegar {
@@ -15,6 +28,7 @@ p {
   padding: 30px;
   font-family: "Helvetica";
   color: red;
+  font-weight: bold;
 }
 
 .center {
