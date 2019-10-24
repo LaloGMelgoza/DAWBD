@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col s6 offset-s1">
+		<h1>Consultas</h1>
+		<p>Se desplegaran tres tipos de consulta en la siguiente página:</p>
+		<br>
+
+		<p>Primera Consulta: Toda la base de datos.</p>
+	</div>
+
+	<?php
+		require_once("modelo.php");
+		echo consultaAlbum(); 
+	?>
+
+	<div class="col s6 offset-s1">
+
+		<p>Segunda Consulta: Todos los discos del artista Muse.</p>
+	</div>
+
+	<?php
+		require_once("modelo.php");
+		echo consultaAlbumMuse(); 
+	?>
+</div>
