@@ -1,20 +1,53 @@
+<main>
+
+<div class="content center">
 <div class="row">
 	<div class="col s1">
 		<br>
-		<a class="waves-effect waves-light btn" href="menuConsultas.php"><i class="material-icons">arrow_back</i></a>
+		<a class="waves-effect waves-light btn blue darken-2" href="menuConsultas.php"><i class="material-icons">arrow_back</i></a>
 	</div>
 
-	<div class="col s6">
-		<br><br><br>
-		<h3>Elegir estado y consultar zombies y cantidad de zombies en ese estado.</h3>
-		<br>
-	</div>
+<h5>Cuarta Consulta:</h5>
+        <div class="row">
+            
+            <div class=" input-field col s3 offset-s1">
+            
+            		<select name="Estado" id="Estado" onChange="getState(this.value)">
+            			<?php require_once("modelo.php");
+                		regresarEstado(); ?>
+            		<label>Selecciona Estado: </label>
+            		</select>
+            	</div>
+                
+            <div class="input-field col s4 offset-s1">
+            <br>
+              <div id="resultado" name="resultado"></div>
+        </div>
 
+            
+        </div>
+        
+        
 
-</div>
-<!--
-	<?php
-		require_once("modelo.php");
-		echo consultaAlbum(); 
-	?>
+        	<script> 
+        		function getState(val){
+        			console.log(val);
+   $.get("modelo.php",{
+         variable: val
+     }).done(function(data){
+             $("#resultado")[0].style.visibility = "visible";
+             $("#resultado").html(data);
+             console.log(data);
+             });
+}
+		function valor(){
+			var valor;
+			valor= document.getElementById('es').value;
+		}
 
+        </script>
+        
+        </div>
+ </div>
+ </main>
+	

@@ -1,51 +1,19 @@
 
 
         <div class="container">
-
+            <br>
             <h3>Zombies</h3>
 
-            <a class="right btn-floating btn-large waves-effect waves-light red" href="agregarZombie.php"><i class="material-icons">add</i></a>
-
-            <table class="highlight">
-                <thead>
-                    <tr>
-                        <th>Zombie</th>
-                        <th>Estados</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Eduardo</td>
-                        <td>infección (2003-08-11 07:05:00)
-                            <br>desorientación (2005-08-14 11:35:00)
-                            <br>violencia (2013-08-12 10:05:00)
-                            <br>desmayo (2019-10-25 13:05:00)
-                            <br>
-                            <br>
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Registrar estado</a>
+            
+            <a class="right btn-small waves-effect waves-light blue darken-2" href="agregarEstado.php">+ Registrar estado</a>
+            <a class="right btn-small waves-effect waves-light green" href="agregarZombie.php">+ Registrar zombie</a>
+            <br><br><br>
 
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ricardo</td>
-                        <td>infección (2005-08-14 11:35:00)
-                            <br>desorientación (2013-08-12 10:05:00)
-                            <br>violencia (2014-08-12 10:05:00)
-                            <br>
-                            <br>
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Registrar estado</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Tú</td>
-                        <td>infección (2019-10-25 13:05:00)
-                            <br>
-                            <br>
-                            <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Registrar estado</a>
-                    </tr>
-                </tbody>
-            </table>
+            <?php
+                require_once("modelo.php");
+                echo desplieguePantallaPrincipal(); 
+            ?>
 
         </div>
     </main>

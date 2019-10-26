@@ -1,0 +1,49 @@
+<main class="content center">
+<h2>Registra Estado</h2>
+
+ <div class="container">
+     
+     <br>
+  <div class="row">
+
+    <form id="forma" method="POST" action="agregarEstado.php">
+
+         <div class="input-field col s5 offset-s1">
+            <select required id="Zombie" name="Zombie">
+                <option value="" disabled selected></option>
+
+                <?php require_once("modelo.php");
+                regresarZombies(); ?>
+            </select>
+
+            <label>Selecciona Zombie </label>
+        </div>
+
+      <div class="row">
+        <div class="input-field col s5 offset-s1">
+ 
+                
+        		<div id="Estado" name="Estado">
+        			<?php
+                	require_once("modelo.php");
+                	regresarEstados(); 
+                ?>
+        		</div>
+                
+
+            <label>Selecciona Estado: </label>
+        </div>
+
+      </div>
+
+      </form>
+      
+      <div class="row ">
+      <button class="waves-effect waves-light btn green darken-1" type="submit" form="forma">Registrar</button>
+  </div>
+      
+    </div>
+
+     
+
+</main>
