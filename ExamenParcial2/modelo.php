@@ -57,7 +57,7 @@
 	       array_push($resultado, array($fila["ID"],$fila["Nombre"]));
 	    }
 	    $regresar='
-	    	<table>
+	    	<table class="striped">
 	    		<thead>
 	    			<tr>
 	    				<td><b>Nombre</b></td>
@@ -170,7 +170,7 @@
 		$query="SELECT Estado,ID FROM Estados";
 		$registros = $db->query($query);
 		$datos=array();
-		$regresar='<table><tbody>';
+		$regresar='<table class="striped"><tbody>';
 		    
 		    while($row = mysqli_fetch_array($registros,MYSQLI_BOTH)){
 		      array_push($datos, array($row["Estado"],$row["ID"]));
@@ -288,11 +288,11 @@
 
 	    $resultado.='
 	    	</p>
-	    		<table>
+	    		<table class="striped">
 		    		<thead>
 		    			<tr>
-		    				<td>Estado</td>
-		    				<td>Cantidad</td>
+		    				<td><b>Estado</b></td>
+		    				<td><b>Cantidad</b></td>
 		    			</tr>
 		    		</thead>
 
@@ -337,11 +337,11 @@
 	   	}
 
 	    $regresar='
-	    	<table>
+	    	<table class="striped">
 	    		<thead>
 	    			<tr>
-	    				<td>Nombre</td>
-	    				<td>Bitacora</td>
+	    				<td><b>Nombre</b></td>
+	    				<td><b>Bitacora</b></td>
 	    			</tr>
 	    		</thead>
 	    	<tbody>
@@ -395,7 +395,16 @@
     while ($fila = mysqli_fetch_array($registros1, MYSQLI_BOTH)) {
        $contador=$fila["cuentaZombies"];
    }
-     $regresar='<table><thead><tr><td>Nombres Zombies</td><td>Cantidad de zombies</td></tr></thead><tbody>';
+     $regresar='
+     	<table class="striped">
+     		<thead>
+     			<tr>
+     				<td><b>Zombies</b>
+     				</td><td><b>Cantidad</b></td>
+     			</tr>
+     		</thead>
+
+     		<tbody>';
     
     while($row = mysqli_fetch_array($registros,MYSQLI_BOTH)){
       array_push($datos, array($row["Nombre"]));
